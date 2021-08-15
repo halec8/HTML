@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#flex-container {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    padding: .5em;
+    border: 5px solid lavenderblush;
+
+}
+
+body {
+    background-color: #1F74AD;
+}
+
+#flex-item1 {
+
+    background-color: lightblue;
+    padding: 10px;
+    font-family: "Helvetica", Ariel, sans-serif;
+    font-size: 16px;
+
+
+}
+#flex-item2{
+    background-color: lavenderblush;
+    padding: 10px;
+    font-family: "Helvetica", Ariel, sans-serif;
+    font-size: 16px;
+
+}
+#flex-item3{
+
+background-color: lightblue;
+    padding: 10px;
+    font-family: "Helvetica", Ariel, sans-serif;
+    font-size: 16px;
+}
+
+#flex-item4{
+    pading: 10px;
+    font-family: "Helvetica", Ariel, sans-serif;
+    font-size: 24px;
+}
+
+header {
+    background-color: lavenderblush;
+    color: #1F74AD;
+    text-align: center;
+    font-family: "Helvetica", Ariel, sans-serif
+
+}
+
+nav {
+
+    background-color: lavenderblush;
+    color: #1F74AD;
+    padding: 10px;
+}
+
+
+nav ul{
+
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0px 1.5em;
+    color: #1F74AD;
+
+}
+
+nav a{
+    color: #1F74AD;
+    text-decoration: none;
+}
+
+footer {
+    background-color: lavenderblush;
+    color: #1F74AD;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Helvetica", Ariel, sans-serif;
+}
+
+@media only screen and(max-width: 800px) {
+
+#flex-container{
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+    
+}

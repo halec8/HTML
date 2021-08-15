@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Gallery with Flexbox</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    }
+    
+#wrapper  {
+  background-color:lightgray;
+  padding: 10px;
+  width:85%;
+  margin: 20px auto;
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+
+.flex-container > figure {
+  border:1px solid black;
+  padding: 5px;
+  background-color: white;
+  width: 260px;
+  margin: 20px auto;
+}
+ 
+
+header {
+    text-align: center;
+    padding: 15px;
+    }
+    
+figure  {	
+    	border: 2px solid black;
+    	background-color: white;
+    	padding: 5px;
+    	margin: 15px;
+    	width:260px;
+    	}
+    	
+figcaption  {
+			font-size: 0.9em;
+			font-style: italic;
+			margin-bottom: 15px;
+			}
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+<header>
+  <h1>Images using Flex box properties. </h1>
+  <p>The flexbox properties allow images contained within block elements (such as div or figure) to wrap and flow. </p>
+</header>
+
+
+<div class="flex-container">
+
+
+<figure>
+   <img src="../images/balloons.jpg">
+   	<figcaption>Fig. 1 Neuf Balloons</figcaption>
+</figure>
+
+<figure>
+   <img src="../images/border_collie.jpg">
+     	<figcaption>Fig. 2 Border Collie</figcaption>
+</figure>
+
+<figure>
+   <img src="../images/frog.jpg">
+     	<figcaption>Fig. 3 Yellow Frog</figcaption>
+</figure>
+
+<figure>
+   <img src="../images/pepper_cob.jpg">
+     	<figcaption>Fig. 4 Red Pepper and Corn</figcaption>
+</figure>
+
+<figure>
+    <img src="../images/off_road.jpg" >
+      	<figcaption>Fig. 5 Off Road Cycling</figcaption>
+</figure>
+
+<figure>
+        <img src="../images/beagle_puppy.jpg" >
+          	<figcaption>Fig. 6 Beagle Puppy</figcaption>
+</figure>
+
+</div><!--close flex-container div-->
+
+</div><!--close div wrapper div-->
+</body>
+</html>
+

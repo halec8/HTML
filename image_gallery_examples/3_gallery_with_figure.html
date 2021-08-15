@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Gallery with Figure Element</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+#container {
+  background-color:lightgray;
+  padding: 10px;
+  width:90%;
+  margin: 20px auto;
+ 
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    }
+    
+figure  {	
+    	border: 2px solid purple;
+    	background-color: white;
+    	padding: 10px;
+    	margin: 15px;
+    	width: 270px;
+    	}
+    	
+figcaption  {
+			font-size: 0.9em;
+			font-style: italic;
+			margin-bottom: 15px;
+			}
+
+</style>
+</head>
+<body>
+<div id="container">
+<header>
+  <h1>Images with Figure and Figcaption Elements</h1>
+  <p>The figure element is another semantic element and used to contain and image and possibly text.The figure element allows for differentiation from other elements and can be styled like any other element Figure is a block element. </P>
+</header>
+
+<!-- Photo Grid -->
+<div id="container">
+
+<figure>
+   <img src="../images/balloons.jpg">
+   	<figcaption>Fig. 1 Neuf Balloons</figcaption>
+</figure>
+
+<figure>
+   <img src="../images/border_collie.jpg">
+     	<figcaption>Fig. 2 Border Collie</figcaption>
+</figure>
+
+<figure>
+   <img src="../images/frog.jpg">
+     	<figcaption>Fig. 3 Yellow Frog</figcaption>
+</figure>
+
+<figure>
+   <img src="../images/pepper_cob.jpg">
+     	<figcaption>Fig. 4 Red Pepper and Corn</figcaption>
+</figure>
+
+<figure>
+    <img src="../images/off_road.jpg" >
+      	<figcaption>Fig. 5 Off Road Cycling</figcaption>
+</figure>
+
+<figure>
+        <img src="../images/beagle_puppy.jpg" >
+          	<figcaption>Fig. 6 Beagle Puppy</figcaption>
+</figure>
+
+</div><!--close container div-->
+</body>
+</html>
+

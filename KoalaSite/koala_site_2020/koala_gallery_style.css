@@ -1,0 +1,196 @@
+body {
+    background-color: #e8e661
+
+}
+
+/* changes the color of the h1 element that is within a boarder to a lightsalmon color, independent selector example */
+h1 {
+    color: lightsalmon;
+}
+
+/* changes the lettering of the paragraph elements, independent selector example */
+p {
+    font-weight: bold;
+    font-style: italic;
+    color: darkolivegreen;
+    font-family: "Times New Roman";
+
+}
+
+/* changes the font style and font family of the h1 heading and the paragraphs, example of grouping selector */
+
+h1, p {
+    font-style: italic;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/* changes the heading with the class heading1 to create a custom border, example of a dependent selector */
+
+
+h1.heading1 {
+    background-color: #333;
+    border: solid #333 10px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    place-content: start;
+
+}
+
+/* the code below is to create a custom navigation panel that lays horizontal, example of inline nav */
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: lightsalmon;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* changes the background color of links that are hovered to lightgray, pseudo-selector example */
+
+a:hover {
+    background-color: lightgray;
+}
+
+
+/* changes the text color of the various lists to darkolivegreen, example of descending/grouping selector */
+
+ol li, ul li, uo li {
+
+    color: darkolivegreen;
+}
+
+
+image {
+
+    background-color: lightsalmon;
+    border: solid #333 10px;
+
+}
+
+
+.banner {
+
+    padding: 0px;
+    margin: auto;
+    border: none;
+    background-color: #111111;
+
+}
+
+nav {
+
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    place-content: start;
+
+}
+
+p.homepageMainParagraph {
+    margin: 15px;
+    padding: 0px;
+
+}
+
+
+.navUL {
+    margin-bottom: -30px;
+}
+
+/* changes the paragraph with the pIntroduction class, dependent class example */
+
+
+p.copyRight {
+
+    background-color: #333;
+    border-style: solid;
+    border-color: #333;
+    color: lightsalmon;
+    width: 100%;
+    margin: 15px -10px 0px -10px;
+    text-align: center;
+
+}
+#flex-container {
+    vertical-align: center;
+    justify-content: center;
+    display: flex;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 16px 4px;
+    justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.grid-item-copyright-logo {
+    display: grid;
+    justify-content: center;
+    grid-gap: 3px;
+    align-content: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.grid-item-backToTop, .grid-item-logo, .grid-item-validation {
+    grid-column: 4;
+    align-content: center;
+    justify-content: center;
+    vertical-align: center;
+    margin: auto;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
